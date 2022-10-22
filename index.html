@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <h1>Bem vindo à criptografia</h1>
+    <h2>Aqui você poderá criptografar e descriptografar as suas mensagens de maneira rápida e simples!</h2>
+
+    <div id="caixa">
+
+        <label for="code-decode"><strong>Escolha:</strong></label>
+        <select id="code-decode" name="code-decode">
+            <option value selected disabled="select">Selecionar</option>
+            <option value="code" id="encript">Criptografar</option>
+            <option value="decode" id="decript">Descriptografar</option>
+    
+        
+            <input id="rb1" type="radio" name="radiogroup1">
+            <label for="rb1">Base 64</label>
+            <input id="rb2" type="radio" name="radiogroup1">
+            <label for="rb2">Cifra de Cesar</label>
+      
+      <!--  <input type=button class="button button1" value="Base 64"></button>
+        <input type=button class="button button2" value="Cifra de César"></button> -->
+
+
+        <form>
+            <textarea id="message-input" name="message-input" placeholder="Coloque aqui a mensagem a ser transformada" maxlength="300"></textarea>
+        </form>
+
+        <input id="transform" type="submit" value="Transformar">
+        
+
+        <form>
+            <textarea id="message-output" name="message-output" maxlength="300" readonly></textarea>
+        </form>
+
+        
+
+    </div>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
